@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="icon" type="image/png" href="https://www.pngmart.com/files/3/Wall-Watch-PNG-Transparent-Image.png">
+     <style>
+        .cursive{
+    font-family:'Courier New', Courier, monospace;
+}
+        .ezy__blog4 {
+  /* Bootstrap variables */
+  --bs-body-color: #28303b;
+  --bs-body-bg: #fff;
+
+  /* easy frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-card-bg: #fff;
+  --ezy-card-shadow: 0 25px 41px rgba(89, 88, 109, 0.15);
+
+  background-color: var(--bs-body-bg);
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .ezy__blog4 {
+    padding: 100px 0;
+  }
+
+  /* Gray Block Style */
+  .gray .ezy__blog4,
+  .ezy__blog4.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+
+    /* easy frontend variables */
+    --ezy-card-bg: #fff;
+    --ezy-card-shadow: 0px 8px 44px rgba(182, 198, 222, 0.48);
+  }
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__blog4,
+.ezy__blog4.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: rgb(241, 241, 241);
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* easy frontend variables */
+  --ezy-card-bg: rgb(11, 23, 39);
+  --ezy-card-shadow: none;
+}
+
+/* Dark Block Style */
+.dark .ezy__blog4,
+.ezy__blog4.dark {
+  /* Bootstrap variables */
+  --bs-body-color: rgb(255, 255, 255);
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* easy frontend variables */
+  --ezy-card-bg: rgb(30, 39, 53);
+  --ezy-card-shadow: none;
+}
+
+/* heading and sub-heading */
+.ezy__blog4-heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--bs-body-color);
+}
+
+.ezy__blog4-sub-heading {
+  color: var(--bs-body-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  opacity: 0.8;
+}
+
+@media (min-width: 991px) {
+  .ezy__blog4-heading {
+    font-size: 45px;
+  }
+}
+
+.ezy__blog4-post {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--ezy-card-bg);
+  box-shadow: var(--ezy-card-shadow);
+}
+
+@media (min-width: 768px) {
+  .ezy__blog4-featured-post .ezy__blog4-author {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .ezy__blog4-featured-post .ezy__blog4-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .ezy__blog4-featured-post .ezy__blog4-description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.ezy__blog4-title {
+  font-weight: 500;
+  margin-top: 0 !important;
+  color: var(--bs-body-color);
+}
+
+.ezy__blog4-description {
+  color: var(--bs-body-color);
+  opacity: 0.6;
+}
+
+.ezy__blog4-btn {
+  padding: 12px 30px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: var(--ezy-theme-color);
+  border-color: var(--ezy-theme-color);
+}
+
+.ezy__blog4-btn:hover {
+  color: #ffffff;
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+}
+
+.ezy__blog4-btn-read-more {
+  padding: 7px 20px;
+  color: var(--bs-body-color);
+  border-color: var(--ezy-theme-color);
+}
+
+.ezy__blog4-btn-read-more:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+  color: #ffffff;
+}
+
+.ezy__blog4-author {
+  color: var(--bs-body-color);
+}
+
+.ezy__blog4-author a {
+  color: var(--ezy-theme-color);
+}
+
+     </style>
+</head>
+<body>
+    <section class="position-sticky top-0 z-1">
+	<nav class="navbar bg-light">
+		<div class="container">
+			<form class="d-lg-flex d-none align-items-center position-relative">
+				<div class="input-group align-items-center">
+					<input aria-describedby="button-addon2" aria-label="Search" class="form-control" placeholder="Search" type="text"> <button class="btn bg-white border" id="button-addon2" type="button"><i class="fas fa-search"></i></button>
+				</div>
+			</form>
+			<div>
+				<a class="navbar-brand" href="index.html"><p class=" fs-2  fw-bolder text-primary position-absolute top-10 start-50
+                     cursive">VELORIAN</p></a>
+			</div>
+			<div class="d-block">
+				<div class="d-flex ms-auto">
+					<a class="text-dark border text-decoration-none border-2 border-dark rounded-circle d-flex align-items-center justify-content-center" href="" style="height:32px;width:32px;">
+            <i class="fa fa-facebook"></i>
+        </a> <a class="text-dark border text-decoration-none border-2 border-dark rounded-circle d-flex align-items-center justify-content-center ms-2" href="" style="height:32px;width:32px;"> <i class="fa fa-twitter"></i></a> <a class="text-dark text-decoration-none border border-2 border-dark rounded-circle d-flex align-items-center justify-content-center ms-2" href="" style="height:32px;width:32px;"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<button aria-controls="navbarSupportedContent8" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent8" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent8">
+				<ul class="navbar-nav me-auto my-2 my-lg-0">
+					<li class="nav-item me-4">
+						<a class="nav-link text-light" href="about.html">About</a>
+					</li>
+					<li class="nav-item me-4">
+						<a class="nav-link text-light" href="shop.html">Shop</a>
+					</li>
+					<li class="nav-item me-4">
+						<a class="nav-link text-light" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item me-4">
+						<a class="nav-link text-light" href="contact.html">Contact</a>
+					</li>
+				</ul>
+				<div class="d-flex">
+					<a class="d-flex align-items-center text-decoration-none text-light" href="tel:+1-541-754-3010">
+            <i class="fa fa-phone"></i> <span class="ms-1">+1-541-754-3010</span></a> <a class="d-flex align-items-center ms-4 text-decoration-none text-light" href="mailto:info@gmail.com"><i class="fa fa-envelope"></i> <span class="ms-2">info@gmail.com</span></a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</section>
+<section class="ezy__blog4 light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="ezy__blog4-heading mb-3 mt-0">MY WATCH BLOG</h2>
+        <p class="ezy__blog4-sub-heading px-lg-5 mb-4">
+         my watch Qui reprehenderit magna ex proident sunt sint duis laborum do non irure fugiat.
+        </p>
+        <a href="" class="btn btn-warning ezy__blog4-btn">All Posts</a>
+      </div>
+    </div>
+
+    <div class="row align-items-center mt-5">
+      <div class="col-12 mb-4">
+        <article class="ezy__blog4-featured-post">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <img src="https://images.unsplash.com/photo-1609684963134-b70db0a3c8fe?q=80&w=719&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="pic1" class="img-fluid rounded-3" />
+            </div>
+            <div class="col-lg-5">
+              <div class="mt-4 mt-lg-0 ps-lg-4">
+                <h4 class="ezy__blog4-title mb-2">
+                  watch Ut fugiat labore proident cillum pariatur esse irure Lorem in labore irure enim consectetur?
+                </h4>
+                <p class="ezy__blog4-description mt-3 mb-4">
+                  Eiusmod adipisicing ullamco minim officia anim cupidatat laborum tempor nostrud adipisicing tempor nisi eiusmod laborum. Tempor enim esse est aliqua duis do pariatur eiusmod non magna do officia. Commodo pariatur sunt incididunt proident velit.
+                </p>
+                <div class="ezy__blog4-author d-flex align-items-center">
+                  <div class="me-2">
+                    <img
+                      src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="pic2"
+                      class="img-fluid rounded-circle border"
+                      width="47"
+                    />
+                  </div>
+                  <div>
+                    <p class="mb-0">By<b> Alan Bell</b></p>
+                    <p class="mb-0 small opacity-75">August 10th, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="ezy__blog4-post rounded overflow-hidden mt-4 h-100">
+          <img src="https://images.unsplash.com/photo-1610395219791-21b0353e43cb?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="pic" class="img-fluid w-100" />
+          <div class="p-3 p-lg-4">
+            <h4 class="ezy__blog4-title fs-4 mb-1">Not Your Regular Watch?</h4>
+            <p class="ezy__blog4-author">
+              <span class="me-2">By <a href="" class="text-decoration-none">Maisha Adiba</a></span>
+              <span><i class="far fa-clock me-1"></i> <span>21 Jun, 2022</span></span>
+            </p>
+            <p class="ezy__blog4-description mt-3 mb-4">
+              Urna molestie at eleme ntum eu facilisis sed odio Male suada fames.
+            </p>
+            <a href="" class="btn ezy__blog4-btn-read-more">Read More</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="ezy__blog4-post rounded overflow-hidden mt-4 h-100">
+          <img src="https://plus.unsplash.com/premium_photo-1723568571445-24c92fc4d566?q=80&w=1804&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="pic" class="img-fluid w-100" />
+          <div class="p-3 p-lg-4">
+            <h4 class="ezy__blog4-title fs-4 mb-1">How I’m Styling Everyday With My Watch!</h4>
+            <p class="ezy__blog4-author">
+              <span class="me-2">By <a href="" class="text-decoration-none">Alex Hales</a></span>
+              <span><i class="far fa-clock me-1"></i> <span>21 Jun, 2022</span></span>
+            </p>
+            <p class="ezy__blog4-description mt-3 mb-4">
+              It’s no secret that the digital industry is booming. From exciting startups to global brands.
+            </p>
+            <a href="" class="btn ezy__blog4-btn-read-more">Read More</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="ezy__blog4-post rounded overflow-hidden mt-4 h-100">
+          <img src="https://plus.unsplash.com/premium_photo-1728759434873-f7da19786b7d?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="pic" class="img-fluid w-100" />
+          <div class="p-3 p-lg-4">
+            <h4 class="ezy__blog4-title fs-4 mb-1">Fashion Essentials All Men Should Wear Watch</h4>
+            <p class="ezy__blog4-author">
+              <span class="me-2">By <a href="" class="text-decoration-none">John Stokes</a></span>
+              <span><i class="far fa-clock me-1"></i> <span>11 Mar, 2022</span></span>
+            </p>
+            <p class="ezy__blog4-description mt-3 mb-4">
+              More off this less hello salamander lied porpoise much over tightly circa horse taped.
+            </p>
+            <a href="" class="btn ezy__blog4-btn-read-more">Read More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="py-4 bg-secondary">
+	<div class="container">
+		<div class="row align-items-center py-4">
+			<div class="col-12 col-lg-3 text-center text-lg-start mb-3 mb-lg-0"><p class="fs-2 fw-bolder text-primary position-absolute top-10 cursive">VELORIAN</p></div>
+			<div class="col-12 col-lg-6 navbar-expand text-center mb-3 mb-lg-0">
+				<ul class="list-unstyled d-block d-lg-flex justify-content-center">
+					<li class="nav-item">
+						<a class="text-dark text-decoration-none me-lg-3" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="text-dark text-decoration-none me-lg-3" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="text-dark text-decoration-none me-lg-3" href="shop.html">Shop</a>
+					</li>
+					<li class="nav-item">
+						<a class="text-dark text-decoration-none me-lg-3" href="gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="text-dark text-decoration-none" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-12 col-lg-3 small text-center text-lg-end">
+				<a class="text-muted" href="">English <i class="fas fa-chevron-down ms-1"></i></a>
+			</div>
+		</div>
+		<div class="border-top d-lg-none"></div>
+		<div class="text-center py-3">
+			<a class="me-2" href=""><i class="fa fa-pinterest-p text-dark fs-3"></i></a>
+			<a class="me-2" href=""><i class="fa fa-twitter text-dark fs-3"></i></a>
+			<a class="me-2" href=""><i class="fa fa-whatsapp text-dark fs-3"></i></a>
+		</div>
+		<div class="pt-lg-4 pb-4 pb-lg-3 text-center small">
+			<p class="mb-0"><a class="d-block d-lg-inline text-muted mx-lg-1 mb-2 mb-lg-0" href="privacy.html">Privacy Policy</a>
+			<a class="d-block d-lg-inline text-muted mx-lg-1 mb-2 mb-lg-0" href="terms.html">Terms of Service</a>
+			<a class="d-block d-lg-inline text-muted mx-lg-1 mb-2 mb-lg-0" href="site.html">Site Map</a></p>
+			<p class="text-muted mb-0">© 2023 VELORINA All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

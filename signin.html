@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="https://www.pngmart.com/files/3/Wall-Watch-PNG-Transparent-Image.png">
+    <style>
+.ezy__signin4 {
+  /* Bootstrap variables */
+  --bs-body-color: #333b7b;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-form-card-bg: #e7f6ff;
+  --ezy-form-card-shadow: none;
+
+  background-color: var(--bs-body-bg);
+  overflow: hidden;
+}
+
+/* Gray Block Style */
+.gray .ezy__signin4,
+.ezy__signin4.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-form-card-bg: #dbf0fd;
+  --ezy-form-card-shadow: 0 16px 24px rgba(209, 223, 247, 0.25);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__signin4,
+.ezy__signin4.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+  --bs-dark-rgb: 255, 255, 255;
+
+  /* Easy Frontend variables */
+  --ezy-form-card-bg: #253140;
+  --ezy-form-card-shadow: none;
+}
+
+/* Dark Block Style */
+.dark .ezy__signin4,
+.ezy__signin4.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+  --bs-dark-rgb: 255, 255, 255;
+
+  /* Easy Frontend variables */
+  --ezy-form-card-bg: #162231;
+  --ezy-form-card-shadow: none;
+}
+
+.ezy__signin4 .container {
+  min-height: 100vh;
+}
+
+.ezy__signin4-heading {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+.ezy__signin4-bg-holder {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  width: 100%;
+}
+
+@media (min-width: 991px) {
+  .ezy__signin4-bg-holder {
+    width: 50vw;
+  }
+}
+
+.ezy__signin4-form-card {
+  background-color: var(--ezy-form-card-bg);
+  border: none;
+  box-shadow: var(--ezy-form-card-shadow);
+  border-radius: 15px;
+}
+
+.ezy__signin4-form-card * {
+  color: var(--bs-body-color);
+}
+
+.ezy__signin4 .form-control {
+  min-height: 48px;
+  line-height: 40px;
+  border-color: transparent;
+  background: rgba(163, 190, 241, 0.14);
+  border-radius: 10px;
+  color: var(--bs-body-color);
+}
+
+.ezy__signin4 .form-control:focus {
+  border-color: var(--ezy-theme-color);
+  box-shadow: none;
+}
+
+.ezy__signin4-btn-submit {
+  padding: 12px 30px;
+  background-color: #333b7b;
+  color: #ffffff;
+}
+
+.ezy__signin4-btn-submit:hover {
+  color: #ffffff;
+}
+
+.ezy__signin4-btn {
+  padding: 12px 30px;
+}
+
+.ezy__signin4-btn,
+.ezy__signin4-btn * {
+  color: #ffffff;
+}
+
+.ezy__signin4-btn:hover {
+  color: #ffffff;
+}
+
+.ezy__signin4-or-separator {
+  position: relative;
+}
+
+.ezy__signin4-or-separator hr {
+  border-color: var(--bs-body-color);
+  opacity: 0.15;
+}
+
+.ezy__signin4-or-separator span {
+  background-color: var(--ezy-form-card-bg);
+  color: var(--bs-body-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+     <section class="position-sticky top-0 z-1">
+	<nav class="navbar bg-light">
+		<div class="container">
+			<form class="d-lg-flex d-none align-items-center position-relative">
+				<div class="input-group align-items-center">
+					<input aria-describedby="button-addon2" aria-label="Search" class="form-control" placeholder="Search" type="text"> <button class="btn bg-white border" id="button-addon2" type="button"><i class="fas fa-search"></i></button>
+				</div>
+			</form>
+			<div>
+				<a class="navbar-brand" href="index.html"><p class=" fs-2  fw-bolder text-primary position-absolute top-10 start-50
+                     cursive">VELORIAN</p></a>
+			</div>
+			<div class="d-block">
+				<div class="d-flex ms-auto">
+					<a class="text-dark border text-decoration-none border-2 border-dark rounded-circle d-flex align-items-center justify-content-center" href="" style="height:32px;width:32px;">
+            <i class="fa fa-facebook"></i>
+        </a> <a class="text-dark border text-decoration-none border-2 border-dark rounded-circle d-flex align-items-center justify-content-center ms-2" href="" style="height:32px;width:32px;"> <i class="fa fa-twitter"></i></a> <a class="text-dark text-decoration-none border border-2 border-dark rounded-circle d-flex align-items-center justify-content-center ms-2" href="" style="height:32px;width:32px;"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<button aria-controls="navbarSupportedContent8" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent8" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent8">
+				<ul class="navbar-nav me-auto my-2 my-lg-0">
+					<li class="nav-item me-4">
+						<a class="nav-link text-light" href="about.html">About</a>
+					</li>
+					<li class="nav-item me-4">
+						<a class="nav-link text-light" href="shop.html">Shop</a>
+					</li>
+					<li class="nav-item me-4">
+						<a class="nav-link text-light" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item me-4">
+						<a class="nav-link text-light" href="contact.html">Contact</a>
+					</li>
+				</ul>
+				<div class="d-flex">
+					<a class="d-flex align-items-center text-decoration-none text-light" href="tel:+1-541-754-3010">
+            <i class="fa fa-phone"></i> <span class="ms-1">+1-541-754-3010</span></a> <a class="d-flex align-items-center ms-4 text-decoration-none text-light" href="mailto:info@gmail.com"><i class="fa fa-envelope"></i> <span class="ms-2">info@gmail.com</span></a>
+				</div>
+			</div>
+		</div>
+	</nav>
+        </section>
+        <section class="ezy__signin4 light d-flex">
+  <div class="container">
+    <div class="row justify-content-between h-100">
+      <div class="col-lg-6 py-5">
+        <div class="row align-items-center h-100 px-lg-5">
+          <div class="col-12">
+            <div class="card ezy__signin4-form-card">
+              <div class="card-body p-md-5">
+                <h2 class="ezy__signin4-heading mb-3">Welcome to Easy Frontend</h2>
+                <p class="mb-4 mb-md-5">
+                  <span class="opacity-50 me-2">Don't have an account?</span>
+                  <a href="#" class="btn btn-link p-0 text-dark text-decoration-none">Create account</a>
+                </p>
+
+                <form>
+                  <div class="form-group mb-4 mt-2">
+                    <label for="email" class="mb-2">Email Address</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter Email Address" />
+                  </div>
+                  <div class="form-group mb-2 mt-2">
+                    <label for="password" class="mb-2">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password" />
+                  </div>
+                  <div class="form-group mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="remember-me" checked />
+                      <label class="form-check-label" for="remember-me"> Remember me </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn ezy__signin4-btn-submit w-100">
+                    Log In
+                    <span class="fas fa-arrow-right ms-2 text-white"></span>
+                  </button>
+                  <button class="btn w-100">Forget your password?</button>
+
+                  <div class="position-relative ezy__signin4-or-separator">
+                    <hr class="my-4 my-md-5" />
+                    <span class="px-2">Or</span>
+                  </div>
+
+                  <button class="btn btn-primary ezy__signin4-btn w-100 d-flex align-items-center mb-3">
+                    <span class="fab fa-facebook text-white fs-4"></span>
+                    <span class="w-100 text-center text-white">Continue with Facebook</span>
+                  </button>
+                  <button class="btn btn-danger ezy__signin4-btn w-100 d-flex align-items-center">
+                    <span class="fab fa-google text-white fs-4"></span>
+                    <span class="w-100 text-center text-white">Continue with Google</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div
+          class="ezy__signin4-bg-holder d-none d-lg-block h-100"
+          style="background-image: url(https://images.unsplash.com/photo-1614703418052-d5b893d495bc?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+        ></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <footer class="py-4 bg-secondary">
+	<div class="container">
+		<div class="row align-items-center py-4">
+			<div class="col-12 col-lg-3 text-center text-lg-start mb-3 mb-lg-0"><p class="fs-2 fw-bolder text-primary position-absolute top-10 cursive">VELORIAN</p></div>
+			<div class="col-12 col-lg-6 navbar-expand text-center mb-3 mb-lg-0">
+				<ul class="list-unstyled d-block d-lg-flex justify-content-center">
+					<li class="nav-item">
+						<a class="text-dark text-decoration-none me-lg-3" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="text-dark text-decoration-none me-lg-3" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="text-dark text-decoration-none me-lg-3" href="shop.html">Shop</a>
+					</li>
+					<li class="nav-item">
+						<a class="text-dark text-decoration-none me-lg-3" href="gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="text-dark text-decoration-none" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-12 col-lg-3 small text-center text-lg-end">
+				<a class="text-muted" href="">English <i class="fas fa-chevron-down ms-1"></i></a>
+			</div>
+		</div>
+		<div class="border-top d-lg-none"></div>
+		<div class="text-center py-3">
+			<a class="me-2" href=""><i class="fa fa-pinterest-p text-dark fs-3"></i></a>
+			<a class="me-2" href=""><i class="fa fa-twitter text-dark fs-3"></i></a>
+			<a class="me-2" href=""><i class="fa fa-whatsapp text-dark fs-3"></i></a>
+		</div>
+		<div class="pt-lg-4 pb-4 pb-lg-3 text-center small">
+			<p class="mb-0"><a class="d-block d-lg-inline text-muted mx-lg-1 mb-2 mb-lg-0" href="privacy.html">Privacy Policy</a>
+			<a class="d-block d-lg-inline text-muted mx-lg-1 mb-2 mb-lg-0" href="terms.html">Terms of Service</a>
+			<a class="d-block d-lg-inline text-muted mx-lg-1 mb-2 mb-lg-0" href="site.html">Site Map</a></p>
+			<p class="text-muted mb-0">© 2023 VELORINA All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
